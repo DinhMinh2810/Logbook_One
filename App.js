@@ -22,18 +22,17 @@ export default function App() {
 			require('./assets/music.mp3')
 		);
 		setSound(sound);
-
 		await sound.playAsync();
 	}
 
-	useEffect(() => {
-		return sound
-			? () => {
-					sound.stopAsync();
-					setSound(!sound);
-			  }
-			: undefined;
-	}, [sound]);
+	// useEffect(() => {
+	// 	return sound
+	// 		? () => {
+	// 				sound.stopAsync();
+	// 				setSound(!sound);
+	// 		  }
+	// 		: undefined;
+	// }, [sound]);
 
 	const showConfirmDialog = () => {
 		return Alert.alert(

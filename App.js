@@ -46,7 +46,7 @@ export default function App() {
 					},
 				},
 				{
-					text: 'Rung',
+					text: 'Vibrate',
 					onPress: () => {
 						Vibration.vibrate(3 * ONE_SECOND_IN_MS);
 					},
